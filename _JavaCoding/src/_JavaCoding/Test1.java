@@ -10,7 +10,9 @@ public class Test1 {
 		  Set<Integer> setA = new HashSet<>(Arrays.asList(1,2,3,5,6));
 	        Set<Integer> setB = new HashSet<>(Arrays.asList(1,5,6,7,8));
 	        
-	        Set<Integer> collect = setA.stream().filter(element->!setB.contains(element)).collect(Collectors.toSet());
+	        Set<Integer> collect = setA.stream()
+	        		.filter(element->!setB.contains(element))
+	        		.collect(Collectors.toSet());
 	        
 	        System.out.println(collect);
 
