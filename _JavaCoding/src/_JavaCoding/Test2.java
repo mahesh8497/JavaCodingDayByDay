@@ -11,7 +11,6 @@ public static void main(String[] args) {
       Set<Character> set2 = s2.chars()
               .mapToObj(c -> (char) c)
               .collect(Collectors.toSet());
-
       String result = s1.chars()
               .mapToObj(c -> (char) c)
               .filter(set2::contains)
@@ -19,6 +18,6 @@ public static void main(String[] args) {
               .map(String::valueOf)
               .collect(Collectors.joining());
 
-      System.out.println(result); // AC
+      System.out.println(result); 
   }
 }
