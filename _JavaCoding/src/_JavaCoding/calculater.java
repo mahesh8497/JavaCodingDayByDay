@@ -47,6 +47,7 @@ public static void main(String[] args) {
 	   default:
            System.out.println("Invalid operator");
    }
+	System.out.println();
 		
 	
 }
