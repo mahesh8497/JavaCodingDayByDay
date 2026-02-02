@@ -7,14 +7,20 @@ import java.util.stream.Collectors;
 
 public class Test1 {
 	public static void main(String[] args) {
-		  Set<Integer> setA = new HashSet<>(Arrays.asList(1,2,3,5,6));
-	        Set<Integer> setB = new HashSet<>(Arrays.asList(1,5,6,7,8));
+//		  Set<Integer> setA = new HashSet<>(Arrays.asList(1,2,3,5,6));
+//	        Set<Integer> setB = new HashSet<>(Arrays.asList(1,5,6,7,8));
 	        
-	        Set<Integer> collect = setA.stream()
-	        		.filter(element->!setB.contains(element))
-	        		.collect(Collectors.toSet());
+	       Set<Integer>setA=new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
+	       Set<Integer>setB=new HashSet<Integer>(Arrays.asList(1,2,6,7,8));
+	       
 	        
-	        System.out.println(collect);
+	        
+//	        
+//	        Set<Integer> collect = setA.stream()
+//	        		.filter(element->!setB.contains(element))
+//	        		.collect(Collectors.toSet());
+//	        
+//	        System.out.println(collect);
 
 	}
 
